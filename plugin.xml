@@ -51,7 +51,6 @@
                 </intent-filter>
         </config-file>
 
-<!--
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <receiver android:exported="true" android:name="jk.cordova.plugin.kiosk.MyPackageReplacedEventReceiver">
                 <intent-filter>
@@ -59,7 +58,7 @@
                 </intent-filter>
             </receiver>
         </config-file>
--->
+		
         <config-file target="AndroidManifest.xml" parent="/manifest">
                 <uses-permission android:name="android.permission.REORDER_TASKS"/>
                 <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
