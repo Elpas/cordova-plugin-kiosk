@@ -36,12 +36,12 @@
                 <param name="android-package" value="jk.cordova.plugin.kiosk.KioskPlugin" />
             </feature>
         </config-file>
-
+<!--
         <edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:label='@string/activity_name']" mode="merge">
             <activity android:name="jk.cordova.plugin.kiosk.KioskActivity" android:keepScreenOn="true">
             </activity>
         </edit-config>
-<!--
+
         <config-file target="AndroidManifest.xml" parent="/manifest/application/activity[@android:label='@string/activity_name']">
                 <intent-filter>
                     <action android:name="android.intent.action.MAIN" />
@@ -51,18 +51,18 @@
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <receiver android:name="jk.cordova.plugin.kiosk.MyPackageReplacedEventReceiver">
+            <receiver android:exported="true" android:name="jk.cordova.plugin.kiosk.MyPackageReplacedEventReceiver">
                 <intent-filter>
                     <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
                 </intent-filter>
             </receiver>
         </config-file>
--->
+
         <config-file target="AndroidManifest.xml" parent="/manifest">
                 <uses-permission android:name="android.permission.REORDER_TASKS"/>
                 <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
         </config-file>
-
+-->
         <source-file src="android/KioskActivity.java" target-dir="src/jk/cordova/plugin/kiosk" />
         <source-file src="android/KioskPlugin.java" target-dir="src/jk/cordova/plugin/kiosk" />
         <source-file src="android/MyPackageReplacedEventReceiver.java" target-dir="src/jk/cordova/plugin/kiosk" />
