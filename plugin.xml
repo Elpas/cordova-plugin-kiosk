@@ -41,6 +41,7 @@
             <activity android:name="jk.cordova.plugin.kiosk.KioskActivity" android:keepScreenOn="true">
             </activity>
         </edit-config>
+-->
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application/activity[@android:label='@string/activity_name']">
                 <intent-filter>
@@ -50,6 +51,7 @@
                 </intent-filter>
         </config-file>
 
+<!--
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <receiver android:exported="true" android:name="jk.cordova.plugin.kiosk.MyPackageReplacedEventReceiver">
                 <intent-filter>
