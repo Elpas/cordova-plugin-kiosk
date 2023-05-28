@@ -36,12 +36,11 @@
                 <param name="android-package" value="jk.cordova.plugin.kiosk.KioskPlugin" />
             </feature>
         </config-file>
-<!--
+
         <edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:label='@string/activity_name']" mode="merge">
-            <activity android:name="jk.cordova.plugin.kiosk.KioskActivity" android:keepScreenOn="true">
+            <activity android:keepScreenOn="true">
             </activity>
         </edit-config>
--->
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application/activity[@android:label='@string/activity_name']">
                 <intent-filter>
